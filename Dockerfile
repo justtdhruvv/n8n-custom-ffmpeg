@@ -6,5 +6,5 @@ COPY --from=alpine /sbin/apk /sbin/apk
 COPY --from=alpine /usr/lib/libapk.so* /usr/lib/
 
 USER root
-RUN apk add --no-cache ffmpeg
+RUN apk add --no-cache ffmpeg python3 yt-dlp
 USER node
